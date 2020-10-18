@@ -8,6 +8,7 @@ function App() {
 
   const [countries, setCountries] = useState([]);
   const [country, setcountry] = useState('worldWide');
+  const [countryInfo,setCountryInfo] = useState({});
 
 
   //https://disease.sh/v3/covid-19/countries
@@ -42,8 +43,23 @@ function App() {
 
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
-    setcountry(countryCode);
-  }
+    //setcountry(countryCode);
+    
+    const url = countryCode === 'worldWide' ? 'https://disease.sh/v3/covid-19/all':
+    `https://disease.sh/v3/covid-19/countries/${countryCode}`;
+ 
+    await fetch(url)
+    .then(response => response.json())
+    .then(data =>{
+      setcountry(countryCode);
+      // All the data from country
+      setCountryInfo(data);
+    })
+  };
+  console.log("countryInfo >>> ",countryInfo);
+    //https://disease.sh/v3/ovid-19/all
+    //
+  
   return (
     <div className="app">
         <div className="app__left">
@@ -67,9 +83,9 @@ function App() {
       </div>
 
       <div className="app__stats">
-        <InfoBox title="coronaVirus Cases" cases={123} total={2000} />
-        <InfoBox title="Recovered" cases={1234} total={3000} />
-        <InfoBox title="Deaths/" cases={12345} total={4000} />
+        <InfoBox title="coronaVirus Cases" cases={12} total={2000} />
+        <InfoBox title="Recovered" cases={123} total={3000} />
+        <InfoBox title="Deaths/" cases={1234} total={4000} />
 
       </div>
 
