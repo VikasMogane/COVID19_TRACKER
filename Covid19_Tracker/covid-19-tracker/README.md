@@ -72,17 +72,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 
-create Wireframe
-create react app
-clean up project
-structure of COVID Tracker
-create Header
-Create Info Boxex
-Create Table
-Create Chart
-Create Map
-Styling
-deploy
+### `create Wireframe       `
+### `create react app            `
+### `clean up project            `
+### `structure of COVID Tracker  `
+### `create Header               `
+### `Create Info Boxex           `
+### `Create Table                `
+### `Create Chart                `
+### `Create Map                  `
+### `Styling                     `
+### `deploy                      `
 
 
 COVID19_TRACKER
