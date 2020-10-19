@@ -66,3 +66,35 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+create Wireframe
+create react app
+clean up project
+structure of COVID Tracker
+create Header
+Create Info Boxex
+Create Table
+Create Chart
+Create Map
+Styling
+deploy
+
+
+COVID19_TRACKER
+
+ Creating a new React app  ----npx create-react-app covid-19-tracker
+ 
+ 
+ npm install @material-ui/core
+ 
+ 
+ https://corona.lmao.ninja/docs/#/COVID-19%3A%20Worldometers/get_v3_covid_19_countries load country
+ 
+ install es7  react/redux/ graphQL
+ 
+
